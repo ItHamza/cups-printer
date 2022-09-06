@@ -8,7 +8,7 @@ class PrinterJob < ApplicationJob
     data = {
       user_id: 7
     }
-    url = "http://localhost:3000/api/v1/download_file?#{URI.encode_www_form(data)}"
+    url = "https://gettabox.channeldispatch.co.uk//api/v1/download_file?#{URI.encode_www_form(data)}"
     response = HTTParty.get(url)
     return 'Files not found' unless response.success? && response['files'].present?
 
