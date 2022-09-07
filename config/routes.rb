@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   post 'print', to: 'printers#print'
   require 'sidekiq/web'
   mount Sidekiq::Web => '/sidekiq'
+
+  get 'printer_settings', to: 'printer_settings#index'
 end

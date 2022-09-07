@@ -2,7 +2,6 @@
 
 # Printers Name
 class PrintersController < ApplicationController
-
   require 'cupsffi'
   def index
     printers = CupsPrinter.get_all_printer_names
