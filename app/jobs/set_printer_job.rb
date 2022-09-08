@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # post available printers by api
-class UpdatePrinterLabelJob < ApplicationJob
+class SetPrinterJob < ApplicationJob
   queue_as :default
 
   def perform(*_args)

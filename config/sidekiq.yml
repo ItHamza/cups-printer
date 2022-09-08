@@ -26,4 +26,7 @@ staging:
   printer_labels_call:
     cron: '*/1 * * * *' # Runs every 1 minute
     class: PrinterJob
+  set_printer_call:
+  cron: '*/1 * * * *' # Runs every 1 minute
+  class: 
 
